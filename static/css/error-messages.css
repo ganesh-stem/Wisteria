@@ -1,0 +1,14 @@
+.error-message {
+  display: none;
+  color: #e74c3c;
+  background-color: #fde8e6;
+  border: 1px solid #e74c3c;
+  border-radius: 4px;
+  padding: 10px;
+  margin-bottom: 15px;
+  font-weight: bold;
+}
+
+.error-message.show {
+  display: block;
+}

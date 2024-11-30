@@ -1,0 +1,55 @@
+#logistic-regression-container {
+    margin-top: 30px;
+    background-color: white;
+    border-radius: 8px;
+    padding: 20px;
+    box-shadow: 0 4px 6px var(--shadow-color);
+  }
+  
+  .logistic-regression-session {
+    background-color: var(--background-color);
+    border-radius: 8px;
+    padding: 20px;
+    margin-bottom: 20px;
+    box-shadow: 0 2px 4px var(--shadow-color);
+    transition: all 0.3s ease;
+  }
+  
+  .logistic-regression-session:hover {
+    box-shadow: 0 4px 8px var(--shadow-color);
+  }
+  
+  .logistic-regression-result {
+    margin-top: 15px;
+    padding: 10px;
+    background-color: #f0f0f0;
+    border-radius: 4px;
+  }
+  
+  .logistic-regression-result h4 {
+    margin-bottom: 10px;
+    color: var(--secondary-color);
+  }
+  
+  .train-logistic-regression {
+    background-color: var(--primary-color);
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 4px;
+    cursor: pointer;
+    font-size: 1rem;
+    transition: background-color 0.3s ease;
+    margin-top: 10px;
+  }
+  
+  .train-logistic-regression:hover {
+    background-color: #2980b9;
+  }
+  
+  .logistic-regression-session input[type="number"] {
+    width: 80px;
+    padding: 5px;
+    margin-left: 10px;
+    margin-bottom: 10px;
+  }

@@ -1,0 +1,16 @@
+.summary-item {
+    text-align: center;
+  }
+  
+  .summary-label {
+    font-weight: bold;
+    color: #495057;
+    display: block;
+    margin-bottom: 5px;
+  }
+  
+  .summary-value {
+    font-size: 1.5em;
+    color: #007bff;
+  }
+  

@@ -1,0 +1,41 @@
+#imputation-container {
+    margin-top: 30px;
+    background-color: white;
+    border-radius: 8px;
+    padding: 20px;
+    box-shadow: 0 4px 6px var(--shadow-color);
+  }
+  
+  .imputation-session {
+    background-color: var(--background-color);
+    border-radius: 8px;
+    padding: 20px;
+    margin-bottom: 20px;
+    box-shadow: 0 2px 4px var(--shadow-color);
+    transition: all 0.3s ease;
+  }
+  
+  .imputation-session:hover {
+    box-shadow: 0 4px 8px var(--shadow-color);
+  }
+  
+  .imputation-result {
+    margin-top: 15px;
+    padding: 10px;
+    background-color: #f0f0f0;
+    border-radius: 4px;
+  }
+  
+  .imputation-result h4 {
+    margin-bottom: 10px;
+    color: var(--secondary-color);
+  }
+  
+  .imputation-result ul {
+    list-style-type: none;
+    padding-left: 0;
+  }
+  
+  .imputation-result li {
+    margin-bottom: 5px;
+  }

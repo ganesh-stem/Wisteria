@@ -1,0 +1,52 @@
+  /* Session container styles */
+  #sessions-container, #groupby-container, #scatter-container {
+    margin-top: 30px;
+    background-color: white;
+    border-radius: 8px;
+    padding: 20px;
+    box-shadow: 0 4px 6px var(--shadow-color);
+  }
+
+  .session {
+    background-color: var(--background-color);
+    border-radius: 8px;
+    padding: 20px;
+    margin-bottom: 20px;
+    box-shadow: 0 2px 4px var(--shadow-color);
+    transition: all 0.3s ease;
+  }
+  
+  .session:hover {
+    box-shadow: 0 4px 8px var(--shadow-color);
+  }
+  
+  .session-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 15px;
+  }
+  
+  .session-header h3 {
+    font-size: 1.2rem;
+    color: var(--secondary-color);
+  }
+  
+  .remove-session {
+    background-color: var(--error-color);
+    color: white;
+    border: none;
+    padding: 5px 10px;
+    border-radius: 4px;
+    cursor: pointer;
+    font-size: 0.9rem;
+    transition: background-color 0.3s ease;
+  }
+  
+  .remove-session:hover {
+    background-color: #c0392b;
+  }
+
+  .session, .grid-item {
+    animation: fadeIn 0.5s ease-in-out;
+  }

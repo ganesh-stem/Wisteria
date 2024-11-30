@@ -1,0 +1,54 @@
+#data-splitting-container {
+    margin-top: 30px;
+    background-color: white;
+    border-radius: 8px;
+    padding: 20px;
+    box-shadow: 0 4px 6px var(--shadow-color);
+  }
+  
+  .data-splitting-session {
+    background-color: var(--background-color);
+    border-radius: 8px;
+    padding: 20px;
+    margin-bottom: 20px;
+    box-shadow: 0 2px 4px var(--shadow-color);
+    transition: all 0.3s ease;
+  }
+  
+  .data-splitting-session:hover {
+    box-shadow: 0 4px 8px var(--shadow-color);
+  }
+  
+  .data-splitting-result {
+    margin-top: 15px;
+    padding: 10px;
+    background-color: #f0f0f0;
+    border-radius: 4px;
+  }
+  
+  .data-splitting-result h4 {
+    margin-bottom: 10px;
+    color: var(--secondary-color);
+  }
+  
+  .perform-data-splitting {
+    background-color: var(--primary-color);
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 4px;
+    cursor: pointer;
+    font-size: 1rem;
+    transition: background-color 0.3s ease;
+    margin-top: 10px;
+  }
+  
+  .perform-data-splitting:hover {
+    background-color: #2980b9;
+  }
+  
+  .data-splitting-session input[type="number"] {
+    width: 60px;
+    padding: 5px;
+    margin-left: 10px;
+  }

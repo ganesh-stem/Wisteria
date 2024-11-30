@@ -1,0 +1,210 @@
+@import url("./data-splitting.css");
+@import url("./data-structure.css");
+@import url("./delete-columns.css");
+@import url("./encoding.css");
+@import url("./imputation.css");
+@import url("./session-management.css");
+@import url("./sidebar.css");
+@import url("./tabs.css");
+@import url("./uploads.css");
+@import url("./headings.css");
+@import url("./column-select.css");
+@import url("./error-messages.css");
+@import url("./buttons.css");
+@import url("./summary.css");
+@import url("./groupby.css");
+
+:root {
+    --primary-color: #3498db;
+    --secondary-color: #2c3e50;
+    --background-color: #f4f7f9;
+    --text-color: #333;
+    --border-color: #e0e0e0;
+    --shadow-color: rgba(0, 0, 0, 0.1);
+    --success-color: #2ecc71;
+    --error-color: #e74c3c;
+    --font-family: 'Roboto', sans-serif;
+  }
+  
+  * {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+  }
+  
+  body {
+    font-family: var(--font-family);
+    background-color: var(--background-color);
+    color: var(--text-color);
+    line-height: 1.6;
+  }
+  
+  .container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 20px;
+  }
+  
+
+  
+  .app-container {
+    display: flex;
+    height: 100vh;
+}
+
+
+
+.main-content {
+    flex-grow: 1;
+    flex: 1;
+    padding: 20px;
+    overflow-y: auto;
+}
+
+
+  
+  .column-search {
+    padding: 5px;
+    border: 1px solid var(--border-color);
+    border-radius: 4px;
+    font-size: 0.9rem;
+  }
+  
+
+  
+  .column-group {
+    margin-bottom: 10px;
+  }
+  
+  .column-group-title {
+    font-weight: 600;
+    margin-bottom: 5px;
+    color: var(--secondary-color);
+  }
+  
+  .column-option {
+    display: flex;
+    align-items: center;
+    margin-bottom: 5px;
+  }
+  
+  .column-option input[type="checkbox"] {
+    margin-right: 5px;
+  }
+  
+  .grid-container {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+    gap: 20px;
+    width: 100%;
+    max-height: 80vh;  /* Limit the height to 80% of the viewport height */
+    overflow-y: auto;  /* Add vertical scrolling if needed */
+    padding: 20px;
+    box-sizing: border-box;
+}
+
+.grid-item {
+    background-color: white;
+    border-radius: 8px;
+    padding: 15px;
+    box-shadow: 0 2px 4px var(--shadow-color);
+    min-width: 300px;  /* Set a minimum width for each chart */
+    min-height: 300px; /* Set a minimum height for each chart */
+    display: flex;
+    flex-direction: column;
+}
+
+.chart-container {
+    flex-grow: 1;
+    width: 100%;
+    height: 100%;
+    min-height: 250px;
+    position: relative;
+}
+
+@media (max-width: 600px) {
+    .grid-container {
+        grid-template-columns: 1fr;  /* Stack charts vertically on small screens */
+    }
+}
+
+@media (max-width: 600px) {
+  .chart-container {
+      height: 250px;
+  }
+}
+
+  /* Animations */
+  @keyframes fadeIn {
+    from { opacity: 0; }
+    to { opacity: 1; }
+  }
+  
+  .session, .grid-item {
+    animation: fadeIn 0.5s ease-in-out;
+  }
+
+
+/* New content */
+  /* Responsive design */
+  @media (max-width: 768px) {
+    .app-container {
+      flex-direction: column;
+    }
+  
+    .main-content {
+      padding: 10px;
+    }
+  }
+
+
+
+@keyframes fadeIn {
+  from { opacity: 0; }
+  to { opacity: 1; }
+}
+
+/* Update the main content area styles */
+.main-content {
+  flex-grow: 1;
+  padding: 2rem;
+  overflow-y: auto;
+  background-color: #f8fafc;
+}
+
+#notification-area {
+  position: fixed;
+  top: 20px;
+  right: 20px;
+  z-index: 1000;
+}
+
+.notification {
+  padding: 15px 20px;
+  margin-bottom: 10px;
+  border-radius: 4px;
+  color: white;
+  font-weight: bold;
+  opacity: 0;
+  transform: translateX(50px);
+  animation: slideIn 0.5s forwards;
+}
+
+.notification.success {
+  background-color: #2ecc71;
+}
+
+.notification.error {
+  background-color: #e74c3c;
+}
+
+@keyframes slideIn {
+  to {
+      opacity: 1;
+      transform: translateX(0);
+  }
+}
+
+
+
+

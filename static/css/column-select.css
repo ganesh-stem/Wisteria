@@ -1,0 +1,25 @@
+  /* Column select styles */
+  .column-select {
+    margin-bottom: 15px;
+  }
+  
+  .column-select-container {
+    max-height: 200px;
+    overflow-y: auto;
+    border: 1px solid var(--border-color);
+    border-radius: 4px;
+    padding: 10px;
+  }
+  
+  .column-select-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 10px;
+  }
+
+  .column-select-actions {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 10px;
+  }

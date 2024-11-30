@@ -1,0 +1,80 @@
+h1, h2 {
+    text-align: center;
+    margin: 20px 0;
+    color: var(--secondary-color);
+  }
+  
+  h1 {
+    font-size: 2.5rem;
+    font-weight: 700;
+  }
+  
+  h2 {
+    font-size: 2rem;
+    font-weight: 600;
+  }
+
+    /* Responsive design */
+    @media (max-width: 768px) {
+        .container {
+          padding: 10px;
+        }
+      
+        h1 {
+          font-size: 2rem;
+        }
+      
+        h2 {
+          font-size: 1.5rem;
+        }
+      
+        .grid-container {
+          grid-template-columns: 1fr;
+        }
+      }
+
+/* Main headings for each section */
+.section-heading {
+    font-size: 2.5rem;
+    font-weight: 700;
+    color: #2c3e50;
+    margin-bottom: 1.5rem;
+    padding-bottom: 0.5rem;
+    border-bottom: 3px solid #50e3c2;
+    display: inline-block;
+}
+
+/* Sub-headings within sections */
+.sub-heading {
+    font-size: 1.8rem;
+    font-weight: 600;
+    color: #34495e;
+    margin-top: 1.5rem;
+    margin-bottom: 1rem;
+}
+
+/* Smaller headings or labels */
+.label-heading {
+    font-size: 1.2rem;
+    font-weight: 600;
+    color: #7f8c8d;
+    margin-top: 1rem;
+    margin-bottom: 0.5rem;
+    text-transform: uppercase;
+    letter-spacing: 0.05em;
+}
+
+/* Responsive adjustments */
+@media (max-width: 768px) {
+    .section-heading {
+        font-size: 2rem;
+    }
+
+    .sub-heading {
+        font-size: 1.5rem;
+    }
+
+    .label-heading {
+        font-size: 1rem;
+    }
+}
